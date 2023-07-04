@@ -97,7 +97,7 @@ main .story h1 {
 }
 
 main .story p {
-    font-size: clamp(0.87rem, 0.7rem + 1.4vw, 1rem);
+    font-size: clamp(0.87rem, 0.1rem + 2vw, 1rem);
     margin: 2.8rem 0;
     color: #4f4f4f;
 }
@@ -406,6 +406,10 @@ footer nav {
     row-gap: 10px;
 }
 
+footer nav p {
+    cursor: pointer;
+}
+
 footer .socials {
     display: flex;
     column-gap: 20px;
@@ -414,6 +418,7 @@ footer .socials {
 footer .social {
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 
 footer .instagram {
@@ -476,7 +481,7 @@ footer .rights {
     font-size: 14px;
 }
 
-/* =================================    FOOTER    ================================= */
+/* =================================    MEDIA    ================================= */
 @media only screen and (max-width: 830px) {
     .container {
         margin: 0 20px;
@@ -527,6 +532,12 @@ footer .rights {
         width: 60%;
     }
 
+    /* =================================    COMMENT    ================================= */
+    .comment h2 {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
     /* =================================    FOOTER    ================================= */
     footer {
         height: 700px;
@@ -543,7 +554,32 @@ footer .rights {
     }
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 630px) {
+    /* =================================    MAIN    ================================= */
+    main .story .join {
+        width: 300px;
+        height: 45px;
+    }
+
+    main .story #email {
+        font-size: 14px;
+    }
+
+    #email::placeholder {
+        font-size: 14px;
+    }
+
+    main .story .join-button {
+        font-size: 16px;
+    }
+
+    /* =================================    SERVICE SECTION    ================================= */
+    section .service-card .logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
     /* =================================    BUSINESS ARTICLE    ================================= */
     .business-article .business-flex {
         grid-template-columns: auto;
